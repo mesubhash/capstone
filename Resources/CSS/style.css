@@ -1,0 +1,694 @@
+
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+a {
+  color: #f03d22;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #869c93;
+  color: #ffffff;
+  border-radius: 0.375rem;
+}
+
+h1, h2, h3 {
+  display: block;
+  font-family:  "rubik", sans-serif;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  color: #ffdb26;
+  font-size: 2rem;
+  margin-bottom: 0.67rem;
+  margin-top: 0.67rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  h1 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+h2 {
+  color:#ed9f32 ;
+  font-size: 2rem;
+  margin-bottom: 0.83rem;
+  margin-top: 0.83rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+p {
+  color: #000000;
+  display: block;
+}
+
+/**** HEADER ****/
+header {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  header {
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (min-width: 575px) {
+header nav {
+  align-items: center;
+  display: flex;
+  height: 2rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 575px) {
+  header nav {
+    justify-content: space-between;
+    min-width: 100%;
+  }
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 575px) {
+  header nav ul {
+    justify-content: space-between;
+    min-width: 100%;
+  }
+}
+
+header li.left {
+  margin-right: auto;
+}
+
+
+@media only screen and (max-width: 575px) {
+  header nav ul li.left {
+    margin:0;
+  }
+}
+
+@media only screen and (max-width: 884px) {
+  li.lg-desktop-only {
+    display: none;
+  }
+}
+
+header nav ul li a {
+  display: block;
+  padding: 0.5rem;
+}
+
+/* school name and logo */
+.school a {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo {
+  padding-right: 0.375rem;
+}
+
+.school-name {
+  align-items: center;
+  display: flex;
+  color: #716f6b;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  justify-content:flex-start;
+  line-height: 2rem;
+}
+
+.school-name-bold {
+  color: #f2301b;
+  font-weight: bold;
+}
+
+header a:hover span {
+  color: #ffffff;
+  border-radius: 0.375rem;
+}
+
+header a:hover span.school-name-bold {
+  color: #bc2626;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+  header nav ul li a:hover {
+    background-color: #ffffff;
+    color: inherit;
+  }
+}
+
+/*** MAIN ***/
+main {
+  border: 1px solid #716f6b;
+  border-bottom: none;
+}
+
+/**** BANNER ****/
+#banner {
+  background-color:  #557da3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 1.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  #banner {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+#banner img {
+  flex-basis: 60%;
+  height: 100%;
+  margin-right: 1.5rem;
+  width: 60%;
+}
+
+
+@media only screen and (max-width: 575px) {
+  #banner img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+}
+
+#banner .content {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 575px) {
+  #banner .content {
+    margin: 2rem 1rem;
+    max-width: 100%;
+  }
+
+  #banner .content h1 {
+    margin-bottom: 1rem;
+
+  }
+}
+
+#banner .content p {
+  font-size: 1.25rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+#banner .content a {
+  background-color: #bc2626;
+  border-radius: 0.375rem;
+  color: #ffffff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#banner .content a:hover {
+  background-color: #aacc21;
+  color: #ffffff;
+}
+
+/**** SCHOOL INFO ****/
+#school-info {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media only screen and (max-width: 575px) {
+  #school-info {
+    flex-direction: column;
+  }
+}
+
+article.lg-article {
+  border-right: 1px solid #fbefa2;
+  flex-basis: 60%;
+  padding: 2rem 1.5rem;
+}
+
+article.lg-article img {
+  max-width: 100%;
+}
+
+article.lg-article h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+article.lg-article p {
+  font-size: 0.95rem;
+
+  margin-bottom: 1.5rem;
+}
+
+article.lg-article address {
+  font-size: 0.8rem;
+font-style: italic;
+}
+
+article.lg-article  address a {
+  color: #bc2626;
+}
+
+article.lg-article address a:hover {
+  background-color: inherit;
+  border-radius: 0;
+  color: #cf872e;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.announcements {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  padding: 1rem 0 2rem;
+}
+
+.announcements article {
+  border-bottom: 1px dotted #fbefa2;
+  border-top: 1px dotted #fbefa2;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-right: 1.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .announcements {
+    flex-basis: 100%;
+    padding: 1rem;
+  }
+
+  .announcements article {
+    flex-direction: column;
+    padding-bottom: 2rem;
+    border: 0;
+  }
+}
+
+.announcements article:first-child {
+  border-top: 0;
+}
+
+.announcements article:last-child {
+  background-color:  #a8e9ed;
+  border:0;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .announcements article:last-child {
+    background-color:  inherit;
+  }
+}
+
+.announcements-img {
+  flex-basis: 35%;
+  height: 100%;
+  padding: 1rem;
+  width: 35%;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .announcements-img {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.announcements-img img {
+  max-width: 100%;
+}
+
+.announcements-content {
+  display: flex;
+  flex-basis: 65%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .announcements-content {
+    flex-basis: 100%;
+    padding: 0 1rem 0.5rem 0;
+  }
+}
+
+.announcements-content a {
+  color: #064ccf;
+  font-weight: bold;
+}
+
+.announcements-content a:hover {
+  background-color: inherit;
+  color: #48d960 ;
+}
+
+.announcements-content p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.announcements-content h3 {
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .announcements-content a {
+    font-size: 0.9rem;
+  }
+}
+
+/**** COURSE INFO ****/
+
+#courses {
+  background-color: #3e77b3;
+  padding: 2rem 4.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  #courses {
+    background-color: inherit;
+    padding: 2rem 1rem;
+  }
+}
+
+#courses h2 {
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.course-catalog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.course {
+  background-color: #ffffff;
+  flex-basis: 30%;
+  margin: 0 2rem 2rem 0;
+  height: 17.5rem;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .course-catalog {
+    flex-flow: column nowrap;
+  }
+
+  .course {
+    background-color: #fbeba2;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+ .course:hover {
+    background-color: #bc2626;
+    border-radius: 0.375rem;
+   color: #ffffff;
+  }
+}
+
+.course img {
+  height; auto;
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .course:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.course:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .course:nth-child(n+3),
+   .course:nth-child(n+4){
+    margin-bottom: 0.5;
+    margin-right: 2rem;
+  }
+}
+
+.course article {
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+.course a {
+  color: #69db7c;
+}
+.course a:hover {
+  color: #f24e35;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .course a {
+    color: #ff2626;
+    margin-bottom: 0;
+  }
+
+  .course a:hover {
+    color: #7569db;
+  }
+}
+
+.course p {
+  margin: 0.5rem 0;
+}
+
+.course p:last-child {
+  margin-bottom: 0;
+}
+
+/**** THESIS ****/
+#thesis {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#thesis h2 {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+.thesis-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+.video-article {
+  flex-basis: 60%;
+  margin: 0 1.5rem 0 0;
+}
+
+.thesis-container h3 a:hover {
+  background-color: inherit;
+  color: #cf872e;
+}
+
+
+.video-article video {
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .thesis-container {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .video-article {
+    flex-basis: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .video-article video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.video-article  h3 {
+  margin: 1.5 0 0.5rem 0;
+}
+
+.video-article p {
+  font-size: 0.95rem;
+
+  margin-bottom: 0;
+  color: #574f3f;
+}
+
+.thesis-articles {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+}
+
+.thesis-articles article {
+  margin-right: 1rem;
+}
+
+.thesis-articles article:first-child {
+  background-color: #cdf7d2;
+  border-top: 0;
+}
+
+
+.thesis-article {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis-img {
+  flex-basis: 35%;
+  padding: 1rem;
+}
+
+.thesis-img img {
+  max-width: 100%;
+}
+
+.thesis-content {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-content a:hover {
+  background-color: inherit;
+  color:  #e03926;
+}
+
+.thesis-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+
+@media only screen and (max-width: 775px) {
+  .thesis-img {
+    display:none;
+  }
+  .thesis-content p,
+  .thesis-content h3 {
+    padding-left: 1rem;
+  }
+}
+
+/**** FOOTER ****/
+footer {
+  border: 1px solid #f51659;
+  border-top: 1px solid #f51659;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+footer span {
+  color: #75797d;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-right-left {
+  padding-right: 0.5rem;
+}
+
+
+
+.mobile-only {
+  display: none;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .desktop-only {
+    display:none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}
